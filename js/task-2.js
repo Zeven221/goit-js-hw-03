@@ -1,11 +1,10 @@
 function makeArray(firstArray,secondArray,maxLength){
-  let combineArray = []
-  combineArray = combineArray.concat(firstArray,secondArray)
+  let combineArray = firstArray.concat(secondArray)
   if(combineArray.length <= maxLength){
     return combineArray
   }
   else {
-    combineArray = combineArray.slice(0,maxLength)
+    combineArray.slice(0,maxLength)
     return combineArray
   }
 }
